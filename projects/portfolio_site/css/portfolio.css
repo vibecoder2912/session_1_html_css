@@ -35,3 +35,30 @@
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
 }
+.portfolio-item img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(30, 41, 59, 0.95) 0%,
+        rgba(30, 41, 59, 0.6) 50%,
+        transparent 100%
+    );
+}
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+}
