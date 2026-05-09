@@ -1,0 +1,10 @@
+/* Tweak breakpoint thresholds */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* Smaller devices */
+@media (max-width: 480px) {
+  .container { padding: 1rem; }
+  .skill-row .skill-name { font-size: .95rem; }
+}
